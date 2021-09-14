@@ -1,0 +1,137 @@
+.mob-hide {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .mob-hide {
+        display: block;
+    }
+
+    .mob-show {
+        display: none;
+    }
+}
+
+body {
+  text-align: center;  
+  background-color: #efefef;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  max-width: 100%;
+}
+
+body > .container {
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: 0 10px 40px 10px #ccc;
+    overflow: hidden;
+}
+
+a {
+    color: crimson;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Arizonia', cursive;
+    
+}
+
+h1 {
+    line-height: 1.5em;
+    padding-top: .5em;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+}
+
+  .fancy {
+    line-height: 0.5;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .fancy span {
+    display: inline-block;
+    position: relative;  
+    line-height: 0;
+    font-size: 1.2em;
+  }
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    top: 0;
+    width: 600px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 25px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 25px;
+  }
+
+.menu {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul a {
+    color: #555;
+    padding: 0 20px;
+}
+
+.mainImg {
+    margin-top: 5px;
+}
+
+.mainImg img {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dedede;
+    box-shadow: 5px 5px 25px 5px #dedede;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dedede;
+    box-shadow: 5px 5px 24px 7px #eee;
+}
+
+.contactImg, .mobileImg {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dedede;
+    box-shadow: 5px 5px 24px 7px #eee;
+}
+
+@media (max-width: 991px) {
+    .contactImg {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+    }   
+
+    .contact {
+        text-align: center;
+    }
+}
